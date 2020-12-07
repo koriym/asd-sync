@@ -1,4 +1,4 @@
-# MERGED: https://github.com/koriym/app-state-diagram/tree/watch-mode
+# MERGED: https://github.com/koriym/app-state-diagram/
 
 # asd-sync
 
