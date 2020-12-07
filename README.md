@@ -13,8 +13,8 @@ A tool for rendering the ALPS application diagram in real time.
 npm install
 ```
 
-## Run
+## Start ASD web service
 
 ```
-gulp
+npm start
 ```
