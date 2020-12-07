@@ -1,0 +1,11 @@
+{
+  "$schema": "https://raw.githubusercontent.com/alps-io/spec/master/schemas/alps.json",
+  "alps": {
+    "descriptor": [
+      {"id": "Index", "descriptor": [
+          {"id": "goFoo", "type": "safe", "rt": "#Foo"}
+      ]},
+      {"id": "Foo"}
+    ]
+  }
+}
