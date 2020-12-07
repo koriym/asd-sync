@@ -1,6 +1,5 @@
 node_modules/
-profile/docs/
-profile/descriptor/
-profile/*.dot
-profile/*.svg
-profile/*.html
+*/*.dot
+*/*.svg
+*/*.html
+alps/*

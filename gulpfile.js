@@ -1,11 +1,22 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const { execSync }  = require('child_process');
+const minimist = require('minimist');
+const path = require('path');
+
+const options = minimist(process.argv.slice(2), {
+    string: 'profile',
+    default: {
+        profile: __dirname + '/alps/alps.json'
+    }
+});
+const profile = options.profile;
+const baseDir = path.dirname(profile);
 
 function serve(cb) {
     browserSync({
         server: {
-            baseDir: 'profile',
+            baseDir: baseDir,
         },
         ghostMode: false,
         open: 'external',
@@ -20,7 +31,7 @@ function reload(cb) {
 }
 
 function asd(cb) {
-    cmd = 'asd ' + __dirname + '/profile/alps.json';
+    cmd = 'asd ' + profile;
     try {
         console.log(execSync(cmd).toString());
     } catch (error) {
@@ -30,7 +41,7 @@ function asd(cb) {
 }
 
 function watch() {
-    gulp.watch('profile/alps.json', gulp.series(asd, reload));
+    gulp.watch(profile, gulp.series(asd, reload));
 }
 
 exports.default = gulp.series(

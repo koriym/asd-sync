@@ -15,6 +15,15 @@ npm install
 
 ## Start ASD web service
 
+
 ```
 npm start
 ```
+
+The default path os alps/alps.json
+
+```
+npm start -- --profile foo/alps.json
+```
+
+You can specify profile path as as described above.
