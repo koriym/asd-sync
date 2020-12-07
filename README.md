@@ -1,3 +1,5 @@
+# MERGED: https://github.com/koriym/app-state-diagram/tree/watch-mode
+
 # asd-sync
 
 A tool for rendering the ALPS application diagram in real time.
