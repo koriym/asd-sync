@@ -22,7 +22,7 @@ function reload(cb) {
 function asd(cb) {
     cmd = 'asd ' + __dirname + '/profile/alps.json';
     try {
-        return execSync(cmd).toString();
+        console.log(execSync(cmd).toString());
     } catch (error) {
         console.error(error.message);
     }
